@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: rgb(176, 160, 158);
+    background-color: rgb(232, 228, 227);
     box-sizing: border-box;
 }
 
@@ -12,7 +12,7 @@ body {
 .form {
     background-color: white;
     box-shadow: 0 0 10px lightgrey;
-    max-width: 40%;
+    max-width: 35%;
     min-height: 70vh;
     margin-left: 350px;
     margin-top: 70px;
