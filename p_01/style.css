@@ -12,9 +12,9 @@ body {
 .form {
     background-color: white;
     box-shadow: 0 0 10px lightgrey;
-    max-width: 35%;
+    max-width: 30%;
     min-height: 70vh;
-    margin-left: 350px;
+    margin-left: 400px;
     margin-top: 70px;
     border-radius: 4px;
 }
