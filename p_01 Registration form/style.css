@@ -1,0 +1,91 @@
+body {
+    background-color: rgb(232, 228, 227);
+}
+
+:root {
+    --succes-color: green;
+    --error-color: orangered;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsla(0, 0%, 50%, 0.1);
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+
+}
+
+.container {
+    background-color: white;
+    box-shadow: 0 0 10px grey;
+    border-radius: 4px;
+    width: 550px;
+}
+
+.form {
+    
+    padding: 30px 40px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-control {
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.form-control label {
+    display: block;
+
+}
+
+.form-control input {
+    width: 85%;
+    border-radius: 2px;
+    padding: 4px;
+    display: block;
+}
+
+.form-control.success input {
+    border-color: var(--succes-color);
+}
+
+.form-control.error input {
+    border-color: var(--error-color);
+}
+
+.form-control small{
+    visibility: hidden;
+    color: var(--error-color);
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+.add {
+    margin-left: 30px;
+    margin-bottom: 4px;
+
+}
+
+.submit {
+    width: 87%;
+    border-radius: 2px;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+

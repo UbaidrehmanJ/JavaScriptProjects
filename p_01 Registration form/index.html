@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration form</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+     <div class="container">
+        <form class="form" id="form">
+            <h1>Register</h1>
+            <div class="form-control">
+                <label for="name">Full Name</label>
+                <input type="text" placeholder="Full Name" id="fullname"/>
+                <small>Error Message</small>
+    
+            </div>
+    
+            <div class="form-control">
+                <label for="Father Name">Father Name</label>
+                <input type="text" placeholder="Father Name" id="fathername"/>
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label for="CNIC">CNIC</label>
+                <input type="text" placeholder="CNIC" id="cnic" />
+                <small>Error Message</small> 
+            </div>
+            <div class="form-control">
+                <label>Date of Birth: <input type="date" /></label>
+            </div>
+    
+            <div class="add">
+                <h5>Gender</h5>
+                <label><input type="radio" name="gender" value="M">Male</label>
+                <label><input type="radio" name="gender" value="F">Female</label>
+    
+            </div>
+    
+            <div class="add">
+                <h3>Nationality</h3>
+                <select id="country">
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="india">India</option>
+                    <option value="Australia">Australia</option>
+                    <option value="usa">USA</option>
+                    <option value="Turkey">Turkey</option>
+                </select>
+            </div>
+            
+            
+    
+            
+            <div class="add">
+                <h3>City</h3>
+                <select id="cities">
+                    <option value="isb">Islamabad</option>
+                    <option value="lhr">Lahore</option>
+                    <option value="rwp">Rawalpindi</option>
+                    <option value="mlt">Multan</option>
+                    <option value="sgd">Sargodha</option>
+                    <option value="shwl">Sahiwal</option>
+                    <option value="bwp">Bahawalpur</option>
+                    <option value="sdq">Sadiqabad</option>
+                    <option value="ryk">Rahimyar Khan</option>
+                    
+                </select>
+            </div>
+            <div class="add">
+                <h4>Select your course</h4>
+                <label><input type="checkbox" name="course" value="1">Artificial Intelligence</label>
+                <label><input type="checkbox" name="course" value="2">Cloud Native computing</label>
+                <label><input type="checkbox" name="course" value="3">Internet of Things</label>
+            </div>
+           
+    
+            <div class="form-control">
+                <label for="email">Enter Email adress</label>
+                <input type="email" placeholder="Email adress" id="email" />
+                <small>Error Message</small>
+            </div>
+    
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" placeholder="Username" id="username"/>
+                <small>Error Message</small>
+            </div>
+    
+            <div class="form-control">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter Password" id="password"/>
+                <small>Error Message</small>
+            </div>
+    
+            
+            <div class="form-control">
+                <button class="submit">Submit</button>
+            </div>
+            
+    
+        </form>
+     </div>
+
+
+    <script src="script.js"></script>
+
+    
+    
+</body>
+</html>

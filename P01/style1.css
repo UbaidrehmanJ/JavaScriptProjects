@@ -1,0 +1,76 @@
+
+:root {
+    --success-color: limegreen;
+    --error-color: orangered;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    min-height: 75vh;
+}
+h3 {
+    text-align: center;
+}
+
+.container {
+    border: 2px solid grey;
+    width: 400px;
+    margin-top: 40px;
+}
+
+.form-control {
+    margin-left: 40px;
+    margin-bottom: 20px;
+    
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    display: block;
+    padding: 7px;
+    border-radius: 3px;
+    /*margin-bottom: 5px;*/
+    width: 85%;
+
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: gray;
+}
+
+.form-control small {
+    color: var(--error-color);
+    position: absolute;
+    /*margin-top: 1px;*/
+    visibility: hidden;
+}
+
+.button {
+    margin-top: 7px;
+    padding: 5px;
+    width: 85%;
+    cursor: pointer;
+    
+}
+
+.form-control.success input {
+    border-color: var(--success-color);
+}
+
+.form-control.error input {
+    border-color: var(--error-color);
+}
+
+.form-control.error small {
+    visibility: visible;
+}
