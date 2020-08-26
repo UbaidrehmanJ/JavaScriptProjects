@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(overview_hero.jpg);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.movie-container {
+    margin-top: 40px;
+}
+
+.movie-container select {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-left: 10px;
+    border: 4px;
+    border-radius: 3px;
+}
+
+.legend {
+    list-style-type: none;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    
+    
+}
+
+.legend small {
+
+    margin: 10px;
+    
+}
+.legrnd li {
+    margin: 5px;
+    
+}
+
+.screen {
+    height: 252px;
+    width: 440px;
+    overflow: hidden;
+    /*
+    background-image: url(auditorium-1.jpg);
+    /*
+    background-color: white;
+    
+    background-image: url(auditoriun-1.jpg);
+    */
+    margin-top: 30px;
+    margin-bottom: 20px;
+    transform: rotateX(-45deg);
+    border: 10px solid rosybrown;
+}
+/*
+.screen1 {
+    height: 252px;
+    width: 440px;
+    /*
+    background-image: url(pic1.jpg);
+    /*
+    background-color: white;
+    
+    background-image: url(auditoriun-1.jpg);
+    
+    margin-top: 30px;
+    margin-bottom: 20px;
+    transform: rotateX(-45deg);
+    border: 10px solid rosybrown;
+
+}
+.screen2 {
+    height: 252px;
+    width: 440px;
+    background-image: url(pic2.jpg);
+    /*
+    background-color: white;
+    
+    background-image: url(auditoriun-1.jpg);
+    
+    margin-top: 30px;
+    margin-bottom: 20px;
+    transform: rotateX(-45deg);
+    border: 10px solid rosybrown;
+}
+
+.screen3 {
+    height: 252px;
+    width: 440px;
+    background-image: url(overview_hero.jpg);
+    /*
+    background-color: white;
+    
+    background-image: url(auditoriun-1.jpg);
+    
+    margin-top: 30px;
+    margin-bottom: 20px;
+    transform: rotateX(-45deg);
+    border: 10px solid rosybrown;
+    
+}
+*/
+
+.seat {
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    margin-bottom: 3px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    margin-right: 3px;
+
+}
+
+.row {
+    display: flex;
+    margin-left: 80px;
+}
+
+.row .seat:nth-of-type(2) {
+    margin-right: 15px;
+}
+.row .seat:nth-last-of-type(2) {
+    margin-left: 15px;
+}
+
+.container {
+    perspective: 900px;
+}
+
+.seat.occupied {
+    background-color: orangered;
+}
+
+.seat.selected {
+    background-color: lime;
+}
+
+.row .seat:not(.occupied) {
+    cursor: pointer;
+}
+
+p {
+    margin-left: 60px;
+}

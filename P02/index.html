@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div>
+        <div class="movie-container">
+            Please choose movie: 
+            <select id="movie">
+                <option value="20">Jumanji ($20)</option>
+                <option value="15">The Lion King ($15)</option>
+                <option value="12">3 idiots ($12)</option>
+                <option value="10">Parwaz hai junoon ($10)</option>   
+            </select>
+        </div>
+        <ul class="legend">
+            <li>
+                <div class="seat occupied"></div>
+                <small>Occupied Seats ( <span id="os">8</span> )</small>
+            </li>
+            <li>
+                <div class="seat selected"></div>
+                <small>Selected Seats ( <span id="ss">0</span> )</small>
+            </li>
+            <li>
+                <div class="seat"></div>
+                <small>Available Seats ( <span id="as">40</span> )</small>
+            </li>
+
+        </ul>
+        <div class="container">
+            
+            <div class="screen"><iframe width="430" height="240" src="https://www.youtube.com/embed/2QKg5SZ_35I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div> 
+              
+        <div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+            <div class="row">
+                <div class="seat occupied"></div>
+                <div class="seat occupied"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+                <div class="seat"></div>
+            </div>
+
+            <p>
+                You have selected <span id="count">0</span> seats for a total price of $<span id="total">0</span>.
+            </p>
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
