@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href="progress.css">
+</head>
+<body>
+    <h1>Video Player</h1>
+    <div class="choose">
+        Please choose the one you want to see:
+        <select id="select">
+            <option value="0">Jumangi</option>
+            <option value="1">The Lion King</option>
+            <option value="2">BOSS</option>
+            <option value="3">Dangerous</option>
+        </select>
+    </div>
+    <div class="screen" id="video" poster="poster.png">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2QKg5SZ_35I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="controls">
+        <button class="btn" id="play">
+            <i class="fas fa-play fa-2x"></i>
+        </button>
+        <button class="btn" id="stop">
+            <i class="fas fa-stop fa-2x"></i>
+        </button>
+        <input type="range" id="progress" class="progress" min="0" max="100" step="0.1" value="0" >
+        <span id="timestamp" class="timestamp">00:00</span>
+    </div>
+
+    
+    <script src="https://kit.fontawesome.com/25ab07f860.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
