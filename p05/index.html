@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="Random User Image"/>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#syllabus">Syllabus</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <header id="home">
+        <button class="toggle" id="toggle">
+            <i class="fa fa-bars fa-2x"></i>
+        </button>
+        <h2>Landing Page</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus veniam, numquam eos officiis aperiam perspiciatis sapiente.
+            
+        </p>
+        <button class="apply" id="open">Apply Now</button>
+    </header>
+
+    <div class="container">
+
+        <h2 id="about">Cloud Native Computing</h2>
+        <p>
+            Cloud native computing is an approach in software development that utilizes cloud computing to "build and run scalable applications in modern, dynamic environments such as public, private, and hybrid clouds"
+            Technologies such as containers, microservices, serverless functions and immutable infrastructure, deployed via declarative code are common elements of this architectural style
+        </p>
+        <hr />
+        <hr/>
+        <h4>More Information</h4>
+        <p>
+            Frequently, cloud-native applications are built as a set of microservices that run in Docker containers,
+            and may be orchestrated in Kubernetes and managed and deployed using DevOps and Git CI workflows
+            (although there is a large amount of competing open source that supports cloud-native development).
+            The advantage of using Docker containers is the ability to package all software needed to execute into one executable package.
+            The container runs in a virtualized environment, which isolates the contained application from its environment.
+        </p>
+        <hr />
+        <hr />
+        
+        <h4 id="syllabus">Topics to be covered:</h4>
+        <p>
+            <ul>
+                <li>Docker</li>
+                <li>Kubernetes</li>
+                <li>HTML, CSS & JavaScript</li>
+                <li>React & React Native</li>
+                <li>mongoDB and Express.js</li>
+            </ul>
+        </p>
+
+        <hr />
+        <hr />
+    
+    </div>
+    
+    <div class="contact" id="contact">
+        
+        <ul>
+            <li><a href="https://github.com/Ubaid-Ur-RehmanJ" target="_blank"><img class="img" width="50px" height="50px" src="pictures/github (1).webp"/></a></li>
+            <li><a href="https://hub.docker.com/u/ubaidrehman627926" target="_blank"><img class="img" width="50px" height="50px" src="pictures/docker-logo.png"/></a></li>
+            <li><a href="https://www.instagram.com/itsubaidrehman/" target="_blank"><img class="img" width="50px" height="50px" src="pictures/instagram.jpg"/></a></li>
+            <li><a href="https://twitter.com/UbaidRe627926" target="_blank"><img class="img" width="50px" height="50px" src="pictures/twitter.png"/></a></li>
+            <li><a href="https://www.linkedin.com/in/ubaid-ur-rehman-a056671a6/" target="_blank"><img class="img" width="50px" height="50px" src="pictures/linkedin.png"/></a></li>
+            <li><a href="https://www.facebook.com/ubaid.rehman.627926/" target="_blank"><img class="img" width="50px" height="50px" src="pictures/fb.png"/></a></li>
+
+        </ul>
+    </div>
+
+    <div class='modal-container' id="modal">
+        <div class='modal'>
+            <button class="close-btn" id="close">
+                <i class="fa fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <h3>Apply</h3>
+            </div>
+            <div class='modal-content'>
+                <p>To SignUp for classes, please submit this form</p>
+                <form class="modal-form">
+                    <div>
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Full Name" class="form-input">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Email" class="form-input">
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Password" class="form-input">
+                    </div>
+                    <div>
+                        <label for="password2">Confirm Password</label>
+                        <input type="password" id="password2" placeholder="Confirm Password" class="form-input">
+                    </div>
+                    <input type="submit" value="Submit" class="submit-btn">
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <script src='script.js'></script>
+
+</body>
+</html>
