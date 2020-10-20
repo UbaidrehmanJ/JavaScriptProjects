@@ -12,7 +12,9 @@ function calculate() {
     fetch(`https://v6.exchangerate-api.com/v6/1475a05fedc5470f17a9a447/latest/${currOneCode}`)
     .then( (res) => res.json() )
     .then( (data) => {
+    
         const exchangeRate = data.conversion_rates[currTwoCode];
+        
 
         rate.innerText = `1 ${currOneCode} = ${exchangeRate} ${currTwoCode}`;
 
