@@ -14,6 +14,8 @@ let time = 15;
 let score = 0;
 text.focus();
 
+let difficulty = localStorage.getItem("difficulty") !== null ? localStorage.getItem("difficulty") : "easy";
+settingDifficulty.value = localStorage.getItem("difficulty") !== null ? localStorage.getItem("difficulty") : "easy";
 
 const wordList = ['a',
 'ability',
@@ -85,5 +87,15 @@ text.addEventListener("input", (e) => {
         
         updateScore();
     }
+})
+
+settingBtn.addEventListener("click", () => {
+    settings.classList.toggle("hide");
+})
+
+settingsForm.addEventListener("change", (e) => {
+    const difficulty = e.target.value;
+    localStorage.setItem("difficulty", difficulty)
+
 })
 
