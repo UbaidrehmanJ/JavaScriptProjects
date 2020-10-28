@@ -65,9 +65,21 @@ function updateTime() {
 
     if ( time === 0) {
         clearInterval(timeInterval)
+
+        gameOver();
     }
 
 
+}
+
+function gameOver() {
+    endGameContainer.innerHTML = `
+    <h1>The game finished</h1>
+    <p>Your score is ${score}</p>
+    <button onClick="window.location.reload()">Play Again</button>
+    `
+
+    endGameContainer.style.display = "flex";
 }
 
 //add text to dom
