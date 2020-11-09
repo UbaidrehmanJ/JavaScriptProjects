@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    background-color: #CAD3C8;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+.confirmed {
+    width: 250px;
+    height: 200px;
+    background-color: #7ed6df;
+    box-shadow: 0 0 5px lightblue;
+    color: white;
+    margin-right: 40px;
+    text-align: center;
+    
+}
+
+.recovered {
+    width: 250px;
+    height: 200px;
+    background-color: #3dc1d3;
+    box-shadow: 0 0 5px lightblue;
+    color: white;
+    text-align: center;
+    margin-right: 40px;
+    
+}
+
+.deaths {
+    width: 250px;
+    height: 200px;
+    background-color: #12CBC4;
+    box-shadow: 0 0 5px lightblue;
+    color: white;
+    text-align: center;
+    
+}
+
+.countries {
+    background: transparent;
+    color: black;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.c-container {
+    display: flex;
+    margin: 20px 0;
+    
+}
+
+h3 {
+    font-size: 22px;
+    color: rgba(0,0,0, 0.6);
+}
+
+h4 {
+    font-size: 20px;
+    color: black;
+}
