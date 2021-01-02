@@ -18,7 +18,7 @@ body {
 .confirmed {
     width: 250px;
     height: 200px;
-    background-color: #7ed6df;
+    background-color: #ffdd59;
     box-shadow: 0 0 5px lightblue;
     color: white;
     margin-right: 40px;
@@ -29,7 +29,7 @@ body {
 .recovered {
     width: 250px;
     height: 200px;
-    background-color: #3dc1d3;
+    background-color: #32ff7e;
     box-shadow: 0 0 5px lightblue;
     color: white;
     text-align: center;
@@ -40,7 +40,7 @@ body {
 .deaths {
     width: 250px;
     height: 200px;
-    background-color: #12CBC4;
+    background-color: #fc5c65;
     box-shadow: 0 0 5px lightblue;
     color: white;
     text-align: center;
