@@ -13,7 +13,7 @@ function getData() {
         .then( res => res.json())
         .then( data => {
             console.log(data);
-            observationTime.innerHTML = `Observed Time (${data.current.observation_time})`
+            observationTime.innerHTML = `Updated at ${data.current.observation_time}`
             city.innerHTML = `${selectedCity} / ${data.location.country}`;
             temp.innerHTML = `${data.current.temperature} <sup>o</sup>`;
             const dateTime = data.location.localtime;
